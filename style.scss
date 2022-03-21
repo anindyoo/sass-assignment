@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&family=Quattrocento+Sans&display=swap');
+// font-family: 'Playfair Display', serif;
+// font-family: 'Quattrocento Sans', sans-serif;
+
+$prime-color: #05595b;
+$second-color: #062c30; 
+
+body, button {
+  font-family: 'Quattrocento Sans', sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 50%;
+}
+
+button {
+  background-color: $prime-color;
+  color: #fff;
+  padding: 7px 19px;
+  border: 1px solid $prime-color;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+button:hover, button#secondary:hover {
+  background-color: #e0fdffab;
+  color: $second-color;
+  border: 1px solid $prime-color;
+  transition: 0.2s ease;
+}
+
+button#secondary {
+  background-color: #fff;
+  color: $second-color;
+}
+
+nav {
+  padding: 15px 20px;
+  // border: 1px solid red;
+  border-bottom: 1px solid #0026272d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  a#logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: $second-color;
+  }
+   
+  ul {
+    margin-left: auto;
+  }
+
+  li {
+    display: inline;
+    padding-left: 10px;
+    a {
+      color: $prime-color;
+    }
+  }
+
+  div {
+    margin-left: 15px;
+  }
+}
+
+div#jumbotron {
+  border: 1px solid rgba(87, 87, 87, 0.13);
+  display: flex;
+  justify-content: space-between;
+  // width: 95%;
+  margin: auto;
+
+  div {
+    padding: 15px 25px;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  img {
+    width: 40%;
+  }
+
+  div#div-button {
+    padding: 0;
+    
+    button#secondary {
+      margin-left: 5px;
+    }
+  }
+}
+
+div#prod {
+  width: 95%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 64px;
+    font-weight: 900;
+  }
+
+  .card {
+    border: 1px solid red;
+    width: 49%;
+    padding: 20px 0;
+  }
+}

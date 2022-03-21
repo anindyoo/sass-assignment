@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&family=Quattrocento+Sans&display=swap");
+body, button {
+  font-family: "Quattrocento Sans", sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 50%;
+}
+
+button {
+  background-color: #05595b;
+  color: #fff;
+  padding: 7px 19px;
+  border: 1px solid #05595b;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+button:hover, button#secondary:hover {
+  background-color: #e0fdffab;
+  color: #062c30;
+  border: 1px solid #05595b;
+  transition: 0.2s ease;
+}
+
+button#secondary {
+  background-color: #fff;
+  color: #062c30;
+}
+
+nav {
+  padding: 15px 20px;
+  border-bottom: 1px solid #0026272d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a#logo {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 24px;
+  color: #062c30;
+}
+nav ul {
+  margin-left: auto;
+}
+nav li {
+  display: inline;
+  padding-left: 10px;
+}
+nav li a {
+  color: #05595b;
+}
+nav div {
+  margin-left: 15px;
+}
+
+div#jumbotron {
+  border: 1px solid rgba(87, 87, 87, 0.13);
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+div#jumbotron div {
+  padding: 15px 25px;
+}
+div#jumbotron div p {
+  margin-bottom: 20px;
+}
+div#jumbotron img {
+  width: 40%;
+}
+div#jumbotron div#div-button {
+  padding: 0;
+}
+div#jumbotron div#div-button button#secondary {
+  margin-left: 5px;
+}
+
+div#prod {
+  width: 95%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div#prod h2 {
+  font-size: 64px;
+  font-weight: 900;
+}
+div#prod .card {
+  border: 1px solid red;
+  width: 49%;
+  padding: 20px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
