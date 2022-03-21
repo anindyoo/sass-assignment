@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&family=Quattrocento+Sans&display=swap");
+body {
+  background-color: #f5f5f5;
+}
+
 body, button {
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Quattrocento Sans", sans-serif !important;
   margin: 0;
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif !important;
 }
 
 a {
-  text-decoration: none;
-}
-
-img {
-  width: 50%;
+  text-decoration: none !important;
 }
 
 button {
@@ -21,7 +21,7 @@ button {
   color: #fff;
   padding: 7px 19px;
   border: 1px solid #05595b;
-  border-radius: 50px;
+  border-radius: 50px !important;
   cursor: pointer;
   transition: 0.1s ease;
 }
@@ -49,7 +49,7 @@ nav a#logo {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-size: 24px;
-  color: #062c30;
+  color: #05595b;
 }
 nav ul {
   margin-left: auto;
@@ -59,40 +59,124 @@ nav li {
   padding-left: 10px;
 }
 nav li a {
-  color: #05595b;
+  color: #05595b !important;
+}
+nav li a:hover {
+  color: #062c30 !important;
 }
 nav div {
   margin-left: 15px;
 }
 
 div#jumbotron {
-  border: 1px solid rgba(87, 87, 87, 0.13);
+  border-bottom: 1px solid #062c3032;
   display: flex;
   justify-content: space-between;
   margin: auto;
+  background-color: #077a7cd3;
+  color: #fff;
+}
+div#jumbotron div#jumbo-detail {
+  padding: 7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 div#jumbotron div {
   padding: 15px 25px;
 }
+div#jumbotron div h2 {
+  font-size: 78px;
+  margin: 0;
+}
 div#jumbotron div p {
+  font-size: 24px;
   margin-bottom: 20px;
 }
 div#jumbotron img {
-  width: 40%;
+  max-width: 50% !important;
 }
 div#jumbotron div#div-button {
   padding: 0;
+}
+div#jumbotron div#div-button button {
+  font-size: 20px;
 }
 div#jumbotron div#div-button button#secondary {
   margin-left: 5px;
 }
 
+@media screen and (min-width: 840px) and (max-width: 1200px) {
+  div#jumbotron div#jumbo-detail {
+    padding: 5vh;
+  }
+  div#jumbotron div h2 {
+    font-size: 52px;
+  }
+  div#jumbotron div p {
+    font-size: 20px;
+  }
+  div#jumbotron div#div-button {
+    padding: 0;
+  }
+  div#jumbotron div#div-button button {
+    font-size: 16px;
+  }
+  div#jumbotron div#div-button button#secondary {
+    margin-left: 5px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 840px) {
+  div#jumbotron div#jumbo-detail {
+    padding: 3vh;
+  }
+  div#jumbotron div h2 {
+    font-size: 28px;
+  }
+  div#jumbotron div p {
+    font-size: 16px;
+  }
+  div#jumbotron div#div-button {
+    padding: 0;
+  }
+  div#jumbotron div#div-button button {
+    font-size: 16px;
+  }
+  div#jumbotron div#div-button button#secondary {
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 425px) {
+  div#jumbotron {
+    flex-direction: column-reverse;
+  }
+  div#jumbotron div#jumbo-detail {
+    padding: 3vh gi2vh;
+  }
+  div#jumbotron div h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  div#jumbotron div p {
+    font-size: 16px;
+  }
+  div#jumbotron img {
+    max-width: 100% !important;
+  }
+  div#jumbotron div#div-button {
+    padding: 0;
+  }
+  div#jumbotron div#div-button button {
+    font-size: 16px;
+  }
+  div#jumbotron div#div-button button#secondary {
+    margin-left: 5px;
+  }
+}
 div#prod {
-  width: 95%;
   margin: auto;
-  padding: 15px 0;
+  padding: 15px 24px;
   display: flex;
-  border: 1px solid red;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
