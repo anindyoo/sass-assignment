@@ -151,7 +151,7 @@ div#jumbotron div#div-button button#secondary {
     flex-direction: column-reverse;
   }
   div#jumbotron div#jumbo-detail {
-    padding: 3vh gi2vh;
+    padding: 3vh 2vh;
   }
   div#jumbotron div h2 {
     font-size: 28px;
