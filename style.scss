@@ -2,7 +2,7 @@
 // font-family: 'Playfair Display', serif;
 // font-family: 'Quattrocento Sans', sans-serif;
 
-$prime-color: #05595b;
+$prime-color: #E2D784;
 $second-color: #062c30; 
 $border: rgba(0, 234, 255, 0);
 $price: #928b55;
@@ -30,7 +30,7 @@ img {
 
 button, .buy {
   background-color: $prime-color;
-  color: #fff;
+  color: #000;
   padding: 7px 19px;
   border: 1px solid $prime-color;
   border-radius: 50px !important;
@@ -39,19 +39,20 @@ button, .buy {
 }
 
 button:hover, button#secondary:hover, .buy:hover {
-  background-color: #e0fdffab;
-  color: $second-color;
+  background-color: #fffdef;
+  color: #000;
   border: 1px solid $prime-color;
   transition: 0.2s ease;
 }
 
 button#secondary {
   background-color: #fff;
-  color: $second-color;
+  // color: $prime-color;
+  color: #000;
 }
 
 nav {
-  padding: 15px 20px;
+  padding: 25px !important;
   // border: 1px solid red;
   border-bottom: 1px solid #0026272d;
   display: flex;
@@ -62,7 +63,7 @@ nav {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     font-size: 24px;
-    color: $prime-color;
+    // color: $prime-color;
   }
    
   ul {
@@ -73,11 +74,11 @@ nav {
     display: inline;
     padding-left: 10px;
     a {
-      color: $prime-color !important;
+      color: #000 !important;
     }
 
     a:hover {
-      color: $second-color !important;
+      color: $prime-color !important;
     }
   }
 
@@ -160,7 +161,7 @@ div#prod {
   .my-card {
     padding: 7vh;
     width: 50%;
-    border: 1px solid rgba(151, 151, 151, 0.103);
+    border: 0.5px solid #7c6d0013;
 
     img {
       width: 50%;
@@ -179,105 +180,181 @@ div#prod {
       font-weight: 700;
       color: $price;
     }
+
+    .buy {
+      font-size: 20px;
+    }
   }
 }
 
+// laptop sm
 @media screen and (min-width: 840px) and (max-width: 1200px) {
-    div#jumbotron {
-      // flex-direction: column-reverse;
-      
-      div#jumbo-detail {
-        padding: 5vh;
-      }
-  
-      div {      
-        h2 {
-          font-size: 52px;
-        }
-  
-        p {
-          font-size: 20px;
-        }
-      }
-  
-      div#div-button {
-        padding: 0;
-        
-        button {
-          font-size: 16px;
-        }
+  div#jumbotron {
+    // flex-direction: column-reverse;
     
-        button#secondary {
-          margin-left: 5px;
-        }
+    div#jumbo-detail {
+      padding: 5vh;
+    }
+
+    div {      
+      h2 {
+        font-size: 52px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    div#div-button {
+      padding: 0;
+      
+      button {
+        font-size: 16px;
+      }
+  
+      button#secondary {
+        margin-left: 5px;
       }
     }
   }
+
+  div#prod {
+    .my-card {
+      padding: 3vh;
+    }
+  }
+}
   
-  @media screen and  (min-width: 426px) and (max-width: 840px)  {
-    div#jumbotron {
-      // flex-direction: column-reverse;
-      div#jumbo-detail {
-        padding: 3vh;
+// tablet
+@media screen and  (min-width: 426px) and (max-width: 840px)  {
+  div#jumbotron {
+    // flex-direction: column-reverse;
+    div#jumbo-detail {
+      padding: 3vh;
+    }
+
+    div {
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    div#div-button {
+      padding: 0;
+      
+      button {
+        font-size: 16px;
       }
   
-      div {
-        h2 {
-          font-size: 28px;
-        }
-  
-        p {
-          font-size: 16px;
-        }
-      }
-  
-      div#div-button {
-        padding: 0;
-        
-        button {
-          font-size: 16px;
-        }
-    
-        button#secondary {
-          margin-left: 5px;
-        }
+      button#secondary {
+        margin-left: 5px;
       }
     }
   }
-  
-  @media screen and (max-width: 425px) {
-    div#jumbotron {
-      flex-direction: column-reverse;
-      
-      div#jumbo-detail {
-        padding: 3vh 2vh;
-      }
-  
-      div {
-        h2 {
-          font-size: 28px;
-          margin-bottom: 10px;
-        }
-  
-        p {
-          font-size: 16px;
-        }
-      }
-  
+
+  div#prod {
+    h2 {
+      font-size: 56px;
+    }
+
+    .my-card {
+      padding: 3vh;
+
       img {
-        max-width: 100% !important;
+        width: 100%;
       }
-  
-      div#div-button {
-        padding: 0;
-        
-        button {
-          font-size: 16px;
+      
+      .prod-pic-desc {
+        flex-direction: column;
+        div {
+          margin-left: unset;
+          margin-top: 5px;
         }
-    
-        button#secondary {
-          margin-left: 5px;
-        }
+      }
+
+      .prod-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
     }
   }
+}
+
+// phone
+@media screen and (max-width: 425px) {
+  div#jumbotron {
+    flex-direction: column-reverse;
+    
+    div#jumbo-detail {
+      padding: 3vh 2vh;
+    }
+
+    div {
+      h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    img {
+      max-width: 100% !important;
+    }
+
+    div#div-button {
+      padding: 0;
+      
+      button {
+        font-size: 16px;
+      }
+  
+      button#secondary {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  div#prod {
+  flex-direction: column;
+    div#prod-title {
+      width: 100%;
+      padding: 3vh;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    .my-card {
+      padding: 3vh;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+      
+      .prod-pic-desc {
+        flex-direction: column;
+        div {
+          margin-left: unset;
+          margin-top: 5px;
+        }
+      }
+
+      .prod-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}

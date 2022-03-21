@@ -17,29 +17,29 @@ a {
 }
 
 button, .buy {
-  background-color: #05595b;
-  color: #fff;
+  background-color: #E2D784;
+  color: #000;
   padding: 7px 19px;
-  border: 1px solid #05595b;
+  border: 1px solid #E2D784;
   border-radius: 50px !important;
   cursor: pointer;
   transition: 0.1s ease;
 }
 
 button:hover, button#secondary:hover, .buy:hover {
-  background-color: #e0fdffab;
-  color: #062c30;
-  border: 1px solid #05595b;
+  background-color: #fffdef;
+  color: #000;
+  border: 1px solid #E2D784;
   transition: 0.2s ease;
 }
 
 button#secondary {
   background-color: #fff;
-  color: #062c30;
+  color: #000;
 }
 
 nav {
-  padding: 15px 20px;
+  padding: 25px !important;
   border-bottom: 1px solid #0026272d;
   display: flex;
   justify-content: space-between;
@@ -49,7 +49,6 @@ nav a#logo {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-size: 24px;
-  color: #05595b;
 }
 nav ul {
   margin-left: auto;
@@ -59,10 +58,10 @@ nav li {
   padding-left: 10px;
 }
 nav li a {
-  color: #05595b !important;
+  color: #000 !important;
 }
 nav li a:hover {
-  color: #062c30 !important;
+  color: #E2D784 !important;
 }
 nav div {
   margin-left: 15px;
@@ -127,7 +126,7 @@ div#prod h2 {
 div#prod .my-card {
   padding: 7vh;
   width: 50%;
-  border: 1px solid rgba(151, 151, 151, 0.103);
+  border: 0.5px solid #7c6d0013;
 }
 div#prod .my-card img {
   width: 50%;
@@ -143,6 +142,9 @@ div#prod .my-card .price {
   font-size: 24px;
   font-weight: 700;
   color: #928b55;
+}
+div#prod .my-card .buy {
+  font-size: 20px;
 }
 
 @media screen and (min-width: 840px) and (max-width: 1200px) {
@@ -164,6 +166,10 @@ div#prod .my-card .price {
   div#jumbotron div#div-button button#secondary {
     margin-left: 5px;
   }
+
+  div#prod .my-card {
+    padding: 3vh;
+  }
 }
 @media screen and (min-width: 426px) and (max-width: 840px) {
   div#jumbotron div#jumbo-detail {
@@ -183,6 +189,28 @@ div#prod .my-card .price {
   }
   div#jumbotron div#div-button button#secondary {
     margin-left: 5px;
+  }
+
+  div#prod h2 {
+    font-size: 56px;
+  }
+  div#prod .my-card {
+    padding: 3vh;
+  }
+  div#prod .my-card img {
+    width: 100%;
+  }
+  div#prod .my-card .prod-pic-desc {
+    flex-direction: column;
+  }
+  div#prod .my-card .prod-pic-desc div {
+    margin-left: unset;
+    margin-top: 5px;
+  }
+  div#prod .my-card .prod-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 @media screen and (max-width: 425px) {
@@ -210,6 +238,36 @@ div#prod .my-card .price {
   }
   div#jumbotron div#div-button button#secondary {
     margin-left: 5px;
+  }
+
+  div#prod {
+    flex-direction: column;
+  }
+  div#prod div#prod-title {
+    width: 100%;
+    padding: 3vh;
+  }
+  div#prod h2 {
+    font-size: 40px;
+  }
+  div#prod .my-card {
+    padding: 3vh;
+    width: 100%;
+  }
+  div#prod .my-card img {
+    width: 100%;
+  }
+  div#prod .my-card .prod-pic-desc {
+    flex-direction: column;
+  }
+  div#prod .my-card .prod-pic-desc div {
+    margin-left: unset;
+    margin-top: 5px;
+  }
+  div#prod .my-card .prod-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
